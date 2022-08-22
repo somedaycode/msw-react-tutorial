@@ -1,0 +1,30 @@
+{
+  "name": "msw-react-example",
+  "version": "0.0.1",
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "graphql": "^16.6.0",
+    "msw": "latest",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "3.4.0"
+  },
+  "scripts": {
+    "start": "../node_modules/.bin/cross-env PORT=3001 react-scripts start",
+    "build": "../node_modules/.bin/react-scripts build",
+    "update": "npx msw init public --no-save"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": true
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}
